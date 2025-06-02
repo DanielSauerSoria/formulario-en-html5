@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario HTML</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Formulario en HTML5</h1>
+
+  <!-- Inicio del formulario -->
+  <form>
+    <!-- Grupo: Entradas de texto -->
+    <fieldset>
+      <legend>Entradas de texto</legend>
+
+      <!-- Entrada de texto simple -->
+      <label for="texto">Texto</label>
+      <input type="text" id="texto" name="texto" placeholder="Escribe texto..." />
+
+      <!-- Entrada para contraseña -->
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" />
+
+      <!-- Entrada para correo electrónico -->
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" />
+
+      <!-- Entrada para URL -->
+      <label for="url">URL</label>
+      <input type="url" id="url" name="url" placeholder="https://www.ejemplo.com" />
+
+      <!-- Entrada para teléfono -->
+      <label for="tel">Teléfono</label>
+      <input type="tel" id="tel" name="tel" placeholder="+52 55 1234 5678" />
+
+      <!-- Entrada para búsqueda -->
+      <label for="search">Buscar</label>
+      <input type="search" id="search" name="search" placeholder="Buscar..." />
+
+      <!-- Área de texto multilínea -->
+      <label for="textarea">Textarea</label>
+      <textarea id="textarea" name="textarea" rows="4" placeholder="Escribe aquí..."></textarea>
+    </fieldset>
+
+    <!-- Grupo: Entradas numéricas y selección -->
+    <fieldset>
+      <legend>Entradas numéricas y de selección</legend>
+
+      <!-- Entrada numérica -->
+      <label for="number">Número</label>
+      <input type="number" id="number" name="number" placeholder="Introduce un número" />
+
+      <!-- Selector de rango -->
+      <label for="range">Rango</label>
+      <input type="range" id="range" name="range" min="0" max="100" />
+
+      <!-- Selector de color -->
+      <label for="color">Color</label>
+      <input type="color" id="color" name="color" />
+
+      <!-- Lista desplegable -->
+      <label for="select">Seleccionar una opción</label>
+      <select id="select" name="select">
+        <option value="op1">Opción 1</option>
+        <option value="op2">Opción 2</option>
+        <option value="op3">Opción 3</option>
+      </select>
+    </fieldset>
+
+    <!-- Grupo: Entradas de fecha y hora -->
+    <fieldset>
+      <legend>Entradas de fecha y hora</legend>
+
+      <!-- Selector de fecha -->
+      <label for="date">Fecha</label>
+      <input type="date" id="date" name="date" />
+
+      <!-- Selector de hora -->
+      <label for="time">Hora</label>
+      <input type="time" id="time" name="time" />
+
+      <!-- Selector de fecha y hora local -->
+      <label for="datetime-local">Fecha y hora local</label>
+      <input type="datetime-local" id="datetime-local" name="datetime-local" />
+
+      <!-- Selector de mes -->
+      <label for="month">Mes</label>
+      <input type="month" id="month" name="month" />
+
+      <!-- Selector de semana -->
+      <label for="week">Semana</label>
+      <input type="week" id="week" name="week" />
+    </fieldset>
+
+    <!-- Grupo: Archivos y campos ocultos -->
+    <fieldset>
+      <legend>Entradas de archivo y ocultas</legend>
+
+      <!-- Subir archivo -->
+      <label for="file">Subir archivo</label>
+      <input type="file" id="file" name="file" />
+
+      <!-- Campo oculto, no visible para el usuario -->
+      <input type="hidden" name="oculto" value="valor_invisible" />
+    </fieldset>
+
+    <!-- Grupo: Opciones de selección -->
+    <fieldset>
+      <legend>Opciones</legend>
+
+      <!-- Checkbox para aceptar términos -->
+      <label>
+        <input type="checkbox" name="check1" /> Acepto términos y condiciones
+      </label>
+
+      <!-- Radios para elegir una opción -->
+      <label>
+        <input type="radio" name="radio" value="uno" /> Opción Uno
+      </label>
+      <label>
+        <input type="radio" name="radio" value="dos" /> Opción Dos
+      </label>
+    </fieldset>
+
+    <!-- Botones para enviar o reiniciar formulario -->
+    <button type="submit">Enviar</button>
+    <button type="reset">Reiniciar</button>
+  </form>
+</body>
+</html>
